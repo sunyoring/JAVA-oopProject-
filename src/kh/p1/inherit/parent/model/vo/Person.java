@@ -40,6 +40,10 @@ public class Person {
 		this.addr = addr;
 	}
 	
+	public String information() {
+		return"이름 : " + name + "성별 : " + gender + "나이 : " + age
+				+ "주소 : " + addr;
+	}
 	
 	
 	

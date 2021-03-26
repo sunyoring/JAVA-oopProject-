@@ -12,6 +12,12 @@ public class Employee extends Person {
 		this.salary = salary; //월급 (만원 단위)
 		this.dept = dept;	//부서
 	}
+	public Employee(String name, int age, char gender, 
+			String adrr,int salary, String dept) {
+		super(name,age,gender,adrr);
+		this.salary = salary;
+		this.dept = dept;
+	}
 	
 	public String getDept() {
 		return dept; 
@@ -25,5 +31,8 @@ public class Employee extends Person {
 	}
 	public void setSalary(int salary) {
 		this.salary = salary;
+	}
+	public String information() {
+		return super.information() + " 월급 : " + salary + " 부서 : " + dept;
 	}
 }

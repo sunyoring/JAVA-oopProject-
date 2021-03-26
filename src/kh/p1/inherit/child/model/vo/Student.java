@@ -12,6 +12,12 @@ public class Student extends Person{
 		this.grade = grade;
 		this.major = major;
 	}
+	public Student(String name, int age, char gender, 
+			String adrr,int grade, String major) {
+		super(name,age,gender,adrr);
+		this.grade = grade;
+		this.major = major;
+	}
 	
 	public int getGrade() {
 		return grade;
@@ -24,5 +30,9 @@ public class Student extends Person{
 	}
 	public void setMajor(String major) {
 		this.major=major;
+	}
+	public String information() {
+		return"이름 : " + super.name + " 성별 : " + super.gender + " 나이 : " + super.age
+				+ " 주소 : " + super.addr + " 학년 : " + grade + " 전공 : " + major;
 	}
 }
