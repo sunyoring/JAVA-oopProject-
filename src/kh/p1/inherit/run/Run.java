@@ -1,5 +1,6 @@
 package com.kh.p1.inherit.run;
 
+import com.kh.p1.inherit.child.model.vo.Computer;
 import com.kh.p1.inherit.child.model.vo.Employee;
 import com.kh.p1.inherit.child.model.vo.Student;
 
@@ -18,7 +19,10 @@ public class Run {
 		System.out.println(emp2.information());
 		
 		Student stu = new Student("홍길순", 20,'F',"화성시",1,"외식산업과");
-		System.out.println(stu.information());
+//		System.out.println(stu.information());
 
+		Computer com = new Computer("i7-1234","SAMSUNG",1800);
+		Student stu2 = new Student("홍길순", 20,'F',"화성시",1,"외식산업과",com);
+		System.out.println(stu2.information());
 	}
 }
