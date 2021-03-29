@@ -28,6 +28,20 @@ public class Run {
 
 		System.out.println("equals의 비교 결과 : " + cs2.equals(cs3));
 
+		CoffeeShop cs4 = null;
+
+		// 객체를 복사해주는 clone메소드
+		// protected Object clone()을 상속관계가 아닌 CoffeeShop과 Run메소드에서
+		// 사용할수 있도록 public으로 바꿔서 재정의
+		/*
+		 * @Override
+		 * 
+		 * public CoffeeShop clone() { return this; }
+		 */
+		cs4 = cs2.clone();
+		System.out.println(cs2);
+		System.out.println(cs4);
+
 	}
 
 }
